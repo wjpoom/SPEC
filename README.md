@@ -1,9 +1,6 @@
-# SPEC
-**[Synthesize, Diagnose, and Optimize: Towards Fine-Grained Vision-Language Understanding](https://arxiv.org/abs/2312.00081)**
-<br/>
+# Synthesize, Diagnose, and Optimize: Towards Fine-Grained Vision-Language Understanding [![arXiv](https://img.shields.io/badge/arXiv-2312.00081-b31b1b.svg)](https://arxiv.org/abs/2312.00081)
 Wujian Peng , Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
-<br/>
-[![arXiv](https://img.shields.io/badge/arXiv-2312.00081-b31b1b.svg)](https://arxiv.org/abs/2312.00081)
+
 
 
 ## Abstract
@@ -28,10 +25,10 @@ Wujian Peng , Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), 
 <p align="center">
 <img src="figs/spec_overview.png" width="1080px"/>  
 <br>
-<em>An overview of the SPEC benchmark. </em>
 </p>
 
 ## TODO
+- [ ] Release the demo of our data synthesis pipeline
 - [ ] Release the data of SPEC benchmark
 - [ ] Release the evaluation code of SPEC
 
