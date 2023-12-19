@@ -28,7 +28,7 @@ Wujian Peng , Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), 
 </p>
 
 ## TODO
-- [ ] Release the demo of our data synthesis pipeline
+- [ ] Release the demo of our data synthesize pipeline
 - [ ] Release the data of SPEC benchmark
 - [ ] Release the evaluation code of SPEC
 
