@@ -1,7 +1,8 @@
 # Synthesize, Diagnose, and Optimize: Towards Fine-Grained Vision-Language Understanding [![arXiv](https://img.shields.io/badge/arXiv-2312.00081-b31b1b.svg)](https://arxiv.org/abs/2312.00081)
 Wujian Peng , Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
 
-
+## Updates
+* Our work has been accepted by [CVPR2024](https://cvpr.thecvf.com/), congratulations🎉🎉🎉! The data and code will be coming soon.
 
 ## Abstract
 > Vision language models (VLM) have demonstrated remarkable performance across various downstream tasks.
