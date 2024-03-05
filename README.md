@@ -1,11 +1,13 @@
 # Synthesize, Diagnose, and Optimize: Towards Fine-Grained Vision-Language Understanding
-[![arXiv](https://img.shields.io/badge/arXiv-2311.16090-red)](https://arxiv.org/abs/2312.00081)
 
+# [![arXiv](https://img.shields.io/badge/arXiv-2312.00081-red)](https://arxiv.org/abs/2312.00081)
 
 **Authors**: Wujian Peng , Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
 
+[[`Paper`](https://arxiv.org/abs/2312.00081)] [`Dataset`] [[`BibTex`](#black_nib-citation)]
+
 ## :fire: Updates
-* `Feb 28, 2024` Our work has been accepted by [CVPR 2024](https://cvpr.thecvf.com/) 🎉🎉🎉, the code and data will be coming soon.
+* `Feb 28, 2024` Our work has been accepted by [CVPR 2024](https://cvpr.thecvf.com/) 🎉🎉🎉, the code and data will coming soon.
 
 ## :mag: Overview
 > To evaluate the understanding capability of visual-language models on fine-grained concepts, we propose a new benchmark, SPEC, 
@@ -18,8 +20,8 @@
 </p>
 
 ## :memo: TODO
-- [ ] Release the demo of our data synthesize pipeline
-- [ ] Release the data of SPEC benchmark
+- [ ] Release the code of our data synthesize pipeline
+- [ ] Release the testing set of SPEC benchmark
 - [ ] Release the evaluation code of SPEC
 
 
