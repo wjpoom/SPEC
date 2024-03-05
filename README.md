@@ -1,6 +1,5 @@
 # Synthesize, Diagnose, and Optimize: Towards Fine-Grained Vision-Language Understanding
-
-# [![arXiv](https://img.shields.io/badge/arXiv-2312.00081-red)](https://arxiv.org/abs/2312.00081)
+[![arXiv](https://img.shields.io/badge/arXiv-2312.00081-red)](https://arxiv.org/abs/2312.00081)
 
 **Authors**: Wujian Peng , Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
 
