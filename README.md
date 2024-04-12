@@ -14,7 +14,7 @@
 > Each test case consists of an image candidate set, which differs only in certain visual concept, and a text candidate set, 
 > which differs only in corresponding language concept.
 <p align="center">
-<img src="figs/spec_overview.png" width="768px"/>  
+<img src="assets/spec_overview.png" width="768px"/>  
 <br>
 </p>
 
@@ -23,6 +23,8 @@
 - [ ] Release the testing set of SPEC benchmark
 - [ ] Release the evaluation code of SPEC
 
+## :clap: Acknowledgement
+This repository is built upon [ARO](https://github.com/mertyg/vision-language-models-are-bows). Thanks for the well-organized codebase.
 
 ## :black_nib: Citation
 If you use our code or data in this repo, or find our work helpful, please consider giving a citation:
