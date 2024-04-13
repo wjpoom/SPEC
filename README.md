@@ -22,9 +22,6 @@ which differs only in the corresponding language concept.
 <be>
 </p>
 
-## :rocket: More advanced version
-We are building a new version with a larger data scale, more object categories, and higher-quality images and text. We have released a preview of the new version, and the full version will coming soon. You can visit the preview at [this website]().
-
 ## :wrench: Usage
 ### install
 ``` shell
@@ -56,6 +53,9 @@ os.remove(os.path.join(data_root, 'data.zip'))
 
 ### evaluate custom VLMs
 * If you want to evaluate your custom model on SPEC, you can follow the instructions in [this document](https://github.com/wjpoom/SPEC/blob/main/docs/evaluate_custom_model.md).
+
+## :rocket: More advanced version
+We are building a new version with a larger data scale, more object categories, and higher-quality images and text. We have released a preview of the new version, and the full version will coming soon. You can visit the preview at [this website]().
 
 ## :memo: TODO
 - [ ] Release the newly built version of the dataset
