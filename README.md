@@ -1,33 +1,73 @@
 # Synthesize, Diagnose, and Optimize: Towards Fine-Grained Vision-Language Understanding
-[![arXiv](https://img.shields.io/badge/arXiv-2312.00081-red)](https://arxiv.org/abs/2312.00081)
 
-**Authors**: Wujian Peng , Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
+*  :bookmark_tabs:[`Paper`](https://arxiv.org/abs/2312.00081) 
+ :file_folder:[`Data`](https://huggingface.co/datasets/wjpoom/SPEC) 
+ :orange_book:[`Colab`]() 
+ :black_nib:[`BibTex`](#black_nib-citation) 
 
-[[`Paper`](https://arxiv.org/abs/2312.00081)] [`Dataset`] [[`BibTex`](#black_nib-citation)]
+* **Authors**: Wujian Peng, Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
 
-## :fire: Updates
-* `Feb 28, 2024` Our work has been accepted by [CVPR 2024](https://cvpr.thecvf.com/) 🎉🎉🎉, the code and data will coming soon.
+## :fire: News
+* `Apr. 14, 2024` We have released a [preview](#rocket-more-advanced-version) of the new dataset version, the full version will come soon.
+* `Apr. 13, 2024` We released the SPEC dataset and the code for evaluation, sorry for the delay :relaxed:.
+* `Feb. 28, 2024` Our work has been accepted by [CVPR 2024](https://cvpr.thecvf.com/) :tada:.
 
-## :mag: Overview
-> To evaluate the understanding capability of visual-language models on fine-grained concepts, we propose a new benchmark, SPEC, 
-> which consists of six distinct subsets, distributed across the dimensions of Size, Position, Existence and Count.
-> Each test case consists of an image candidate set, which differs only in certain visual concept, and a text candidate set, 
-> which differs only in corresponding language concept.
+## :mag: SPEC Benchmark
+To evaluate the understanding capability of visual-language models on fine-grained concepts, we propose a new benchmark, SPEC, 
+which consists of six distinct subsets, distributed across the dimensions of **S**ize, **P**osition, **E**xistence, and **C**ount.
+Each test case consists of an image candidate set, which differs only in certain visual concepts, and a text candidate set, 
+which differs only in the corresponding language concept.
 <p align="center">
-<img src="assets/spec_overview.png" width="768px"/>  
-<br>
+<img src="assets/spec_overview.png" width="720px"/>  
+<be>
 </p>
 
+## :rocket: More advanced version
+We are building a new version with a larger data scale, more object categories, and higher-quality images and text. We have released a preview of the new version, and the full version will coming soon. You can visit the preview at [this website]().
+
+## :wrench: Usage
+### install
+```shell
+git clone https://github.com/wjpoom/SPEC.git
+cd SPEC/
+pip install -e .
+```
+### prepare data
+* run the following code in Python shell, replace `/path/to/save/data` with a specified dir to store the data.
+```python
+import zipfile
+from huggingface_hub import hf_hub_download
+
+data_root = '/path/to/save/data'
+hf_hub_download(repo_id='wjpoom/SPEC', repo_type='dataset', filename='data.zip', local_dir=data_root)
+
+with zipfile.ZipFile(os.path.join(data_root, 'data.zip'), 'r') as zip_ref:
+    zip_ref.extractall(os.path.join(data_root))
+os.remove(os.path.join(data_root, 'data.zip'))
+```
+### explore the dataset
+* We provide a 📓notebook that enables you to visually explore the test samples in the SPEC dataset.
+* Run this notebook either [locally](https://github.com/wjpoom/SPEC/blob/main/notebooks/explore_spec_local.ipynb) or online using [Colab](https://colab.research.google.com/github/wjpoom/SPEC/blob/main/notebooks/explore_spec_colab.ipynb).
+
+### reproduce the results
+* In [our paper](https://arxiv.org/abs/2312.00081), we evaluated four popular VLMs using our SPEC dataset, namely: [CLIP](https://arxiv.org/abs/2103.00020), [BLIP](https://arxiv.org/abs/2201.12086), [FLAVA](https://arxiv.org/abs/2112.04482), and [CoCa](https://arxiv.org/abs/2205.01917).
+* To reproduce the results with these VLMs, you can run [this script](https://github.com/wjpoom/SPEC/blob/main/spec/run_eval.sh).
+* You can also reproduce with this [local notebook](https://github.com/wjpoom/SPEC/blob/main/notebooks/evaluate_example.ipynb) or the online [Colab notebook](https://colab.research.google.com/github/wjpoom/SPEC/blob/main/notebooks/evaluate_example_colab.ipynb).
+
+### evaluate custom VLMs
+* If you want to evaluate your custom model on SPEC, you can follow the instructions in [this document](https://github.com/wjpoom/SPEC/blob/main/docs/evaluate_custom_model.md).
+
 ## :memo: TODO
+- [ ] Release the newly built version of the dataset
 - [ ] Release the code of our data synthesize pipeline
-- [ ] Release the testing set of SPEC benchmark
-- [ ] Release the evaluation code of SPEC
+- [x] Release the testing set of SPEC benchmark
+- [x] Release the evaluation code of SPEC
 
 ## :clap: Acknowledgement
-This repository is built upon [ARO](https://github.com/mertyg/vision-language-models-are-bows). Thanks for the well-organized codebase.
+Part of this repository is built upon [ARO](https://github.com/mertyg/vision-language-models-are-bows), thanks for the well-organized codebase.
 
 ## :black_nib: Citation
-If you use our code or data in this repo, or find our work helpful, please consider giving a citation:
+If you use our code or data in this repo or find our work helpful, please consider giving a citation:
 
 ```
 @inproceedings{peng2024spec,

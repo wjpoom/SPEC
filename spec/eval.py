@@ -22,9 +22,11 @@ def main():
     # set random seeds
     seed_all(args.seed)
 
+    device = 'cuda' if torch.cuda.is_available() else 'cpu'
     # load model
     model, image_preprocess = get_model(model_name=args.model_name,
-                                        cache_dir=args.model_cache_dir)
+                                        cache_dir=args.model_cache_dir,
+                                        device=device)
 
     # load data
     data = get_data(data_root=args.data_root,

@@ -11,11 +11,31 @@ class BaseWrapper(metaclass=ABCMeta):
     @abstractmethod
     @torch.no_grad()
     def i2t_evaluate(self, subset_name, dataloader):
+        """
+        Performing `Image-to-Text` retrieval evaluation.
+        Args:
+            subset_name: the name of subset that you are running on
+            dataloader: the dataloader that contains all the image to text samples
+
+        Returns:
+            i2t_scores:
+            i2t_acc:
+        """
         pass
 
     @abstractmethod
     @torch.no_grad()
     def t2i_evaluate(self, subset_name, dataloader):
+        """
+        Performing `Text-to-Image` retrieval evaluation.
+        Args:
+            subset_name: the name of subset that you are running on
+            dataloader: the dataloader that contains all the image to text samples
+
+        Returns:
+            t2i_scores:
+            t2i_acc:
+        """
         pass
 
     @torch.no_grad()

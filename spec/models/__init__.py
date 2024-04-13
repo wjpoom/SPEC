@@ -1,15 +1,15 @@
 """code credict: https://github.com/mertyg/vision-language-models-are-bows/tree/main/model_zoo"""
 
-def get_model(model_name, cache_dir='~/.cache'):
+def get_model(model_name, cache_dir='~/.cache', device='cuda'):
     """
     Helper function that returns a model and an image preprocessing function and text tokenizer.
     Args:
         model_name: the model that you want to create
         cache_dir: the path to cache the downloader model checkpoints
+        device
     Returns:
         pretrained_model, image_preprocess
     """
-    device = 'cuda'
 
     if model_name == 'clip':
         from .clip_wrapper import CLIPWrapper
