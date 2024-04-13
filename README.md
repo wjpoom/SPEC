@@ -1,11 +1,11 @@
 # Synthesize, Diagnose, and Optimize: Towards Fine-Grained Vision-Language Understanding
 
-*  :bookmark_tabs:[`Paper`](https://arxiv.org/abs/2312.00081) 
+ :bookmark_tabs:[`Paper`](https://arxiv.org/abs/2312.00081) 
  :file_folder:[`Data`](https://huggingface.co/datasets/wjpoom/SPEC) 
  :orange_book:[`Notebook`](https://github.com/wjpoom/SPEC/tree/main/notebooks) 
  :black_nib:[`BibTex`](#black_nib-citation) 
 
-* **Authors**: Wujian Peng, Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
+**Authors**: Wujian Peng, Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
 
 ## :fire: News
 * `Apr. 14, 2024` We have released a [preview](#rocket-more-advanced-version) of the new dataset version, the full version will come soon.
