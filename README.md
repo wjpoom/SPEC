@@ -2,7 +2,7 @@
 
 *  :bookmark_tabs:[`Paper`](https://arxiv.org/abs/2312.00081) 
  :file_folder:[`Data`](https://huggingface.co/datasets/wjpoom/SPEC) 
- :orange_book:[`Colab`]() 
+ :orange_book:[`Notebook`](https://github.com/wjpoom/SPEC/tree/main/notebooks) 
  :black_nib:[`BibTex`](#black_nib-citation) 
 
 * **Authors**: Wujian Peng, Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
@@ -27,7 +27,7 @@ We are building a new version with a larger data scale, more object categories, 
 
 ## :wrench: Usage
 ### install
-```shell
+``` shell
 git clone https://github.com/wjpoom/SPEC.git
 cd SPEC/
 pip install -e .
@@ -50,9 +50,9 @@ os.remove(os.path.join(data_root, 'data.zip'))
 * Run this notebook either [locally](https://github.com/wjpoom/SPEC/blob/main/notebooks/explore_spec_local.ipynb) or online using [Colab](https://colab.research.google.com/github/wjpoom/SPEC/blob/main/notebooks/explore_spec_colab.ipynb).
 
 ### reproduce the results
-* In [our paper](https://arxiv.org/abs/2312.00081), we evaluated four popular VLMs using our SPEC dataset, namely: [CLIP](https://arxiv.org/abs/2103.00020), [BLIP](https://arxiv.org/abs/2201.12086), [FLAVA](https://arxiv.org/abs/2112.04482), and [CoCa](https://arxiv.org/abs/2205.01917).
+* In our paper, we evaluated four popular VLMs using our SPEC dataset, namely: CLIP, BLIP, FLAVA and CoCa.
 * To reproduce the results with these VLMs, you can run [this script](https://github.com/wjpoom/SPEC/blob/main/spec/run_eval.sh).
-* You can also reproduce with this [local notebook](https://github.com/wjpoom/SPEC/blob/main/notebooks/evaluate_example.ipynb) or the online [Colab notebook](https://colab.research.google.com/github/wjpoom/SPEC/blob/main/notebooks/evaluate_example_colab.ipynb).
+* You can also reproduce with this [local notebook](https://github.com/wjpoom/SPEC/blob/main/notebooks/evaluate_example_local.ipynb) or the online [Colab notebook](https://colab.research.google.com/github/wjpoom/SPEC/blob/main/notebooks/evaluate_example_colab.ipynb).
 
 ### evaluate custom VLMs
 * If you want to evaluate your custom model on SPEC, you can follow the instructions in [this document](https://github.com/wjpoom/SPEC/blob/main/docs/evaluate_custom_model.md).
