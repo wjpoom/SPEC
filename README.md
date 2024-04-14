@@ -13,6 +13,10 @@
 * `Apr. 13, 2024` We released the SPEC dataset and the code for evaluation, sorry for the delay :relaxed:.
 * `Feb. 28, 2024` Our work has been accepted by [CVPR 2024](https://cvpr.thecvf.com/) :tada:.
 
+## :rocket: A more advanced version is coming!
+We are building a new version with a larger data scale, more object categories, and higher-quality images and text, and more. 
+You can preview it at [this website](https://wjpoom.github.io/preview/), and the full version will come soon.
+
 ## :mag: SPEC Benchmark
 To evaluate the understanding capability of visual-language models on fine-grained concepts, we propose a new benchmark, SPEC, 
 which consists of six distinct subsets, distributed across the dimensions of **S**ize, **P**osition, **E**xistence, and **C**ount.
@@ -56,10 +60,6 @@ os.remove(os.path.join(data_root, 'data.zip'))
 
 ### evaluate custom VLMs
 * If you want to evaluate your custom model on SPEC, you can follow the instructions in [this document](https://github.com/wjpoom/SPEC/blob/main/docs/evaluate_custom_model.md).
-
-## :rocket: A more advanced version
-We are building a new version with a larger data scale, more object categories, and higher-quality images and text. 
-You can preview it at [this website](https://wjpoom.github.io/preview/), and the full version will come soon.
 
 ## :memo: TODO
 - [ ] Release the newly built version of the dataset
