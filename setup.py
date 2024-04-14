@@ -8,10 +8,7 @@ setup(
     packages=find_packages(),
     install_requires=[
                       'einops>=0.7.0',
-                      'fairscale==0.4.13',
-                      'numpy==1.24.4',
                       'open_clip_torch==2.24.0',
-                      'Pillow==10.3.0',
                       'PyYAML==6.0.1',
                       'setuptools==69.2.0',
                       'timm==0.9.16',
@@ -20,6 +17,6 @@ setup(
                       'tqdm==4.66.2',
                       'transformers==4.38.2',
                       'huggingface-hub==0.21.4',
-                      'zipp==3.17.0'
+                      'jedi>=0.16'
     ]
 )

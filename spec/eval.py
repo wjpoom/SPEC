@@ -52,7 +52,7 @@ def main():
     print(f'average all subset: Text2Image Accuracy: {t2i_acc/subset_num:.2f} %')
 
     # save results
-    out_fn = f"{args.model_name}__evaluate_result.pth"
+    out_fn = f"{args.model_name}_result.pth"
     out_fn = os.path.join(args.out_path, out_fn)
     torch.save(result, out_fn)
     print(f'result saved to {out_fn}.')

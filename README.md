@@ -40,6 +40,7 @@ hf_hub_download(repo_id='wjpoom/SPEC', repo_type='dataset', filename='data.zip',
 
 with zipfile.ZipFile(os.path.join(data_root, 'data.zip'), 'r') as zip_ref:
     zip_ref.extractall(os.path.join(data_root))
+    
 os.remove(os.path.join(data_root, 'data.zip'))
 ```
 ### explore the dataset
@@ -54,8 +55,9 @@ os.remove(os.path.join(data_root, 'data.zip'))
 ### evaluate custom VLMs
 * If you want to evaluate your custom model on SPEC, you can follow the instructions in [this document](https://github.com/wjpoom/SPEC/blob/main/docs/evaluate_custom_model.md).
 
-## :rocket: More advanced version
-We are building a new version with a larger data scale, more object categories, and higher-quality images and text. We have released a preview of the new version, and the full version will coming soon. You can visit the preview at [this website]().
+## :rocket: A more advanced version
+We are building a new version with a larger data scale, more object categories, and higher-quality images and text. 
+You can preview it at [this website](), and the full version will come soon.
 
 ## :memo: TODO
 - [ ] Release the newly built version of the dataset

@@ -1,4 +1,5 @@
 """code credict: https://github.com/mertyg/vision-language-models-are-bows/tree/main/model_zoo"""
+import os
 
 def get_model(model_name, cache_dir='~/.cache', device='cuda'):
     """
@@ -10,6 +11,7 @@ def get_model(model_name, cache_dir='~/.cache', device='cuda'):
     Returns:
         pretrained_model, image_preprocess
     """
+    os.makedirs(cache_dir, exist_ok=True)
 
     if model_name == 'clip':
         from .clip_wrapper import CLIPWrapper
