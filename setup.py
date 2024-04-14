@@ -17,6 +17,7 @@ setup(
                       'tqdm==4.66.2',
                       'transformers==4.38.2',
                       'huggingface-hub==0.21.4',
-                      'jedi>=0.16'
+                      'jedi>=0.16',
+                      'fairscale==0.4.13',
     ]
 )

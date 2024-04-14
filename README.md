@@ -4,11 +4,12 @@
  :file_folder:[`Data`](https://huggingface.co/datasets/wjpoom/SPEC) 
  :orange_book:[`Notebook`](https://github.com/wjpoom/SPEC/tree/main/notebooks) 
  :black_nib:[`BibTex`](#black_nib-citation) 
+ :rocket:[`Preview`](https://wjpoom.github.io/preview/)
 
 **Authors**: Wujian Peng, Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
 
 ## :fire: News
-* `Apr. 14, 2024` We have released a [preview](#rocket-more-advanced-version) of the new dataset version, the full version will come soon.
+* `Apr. 14, 2024` We have released a [preview](#rocket-a-more-advanced-version) of a more advanced dataset version, the full version will come soon.
 * `Apr. 13, 2024` We released the SPEC dataset and the code for evaluation, sorry for the delay :relaxed:.
 * `Feb. 28, 2024` Our work has been accepted by [CVPR 2024](https://cvpr.thecvf.com/) :tada:.
 
@@ -33,6 +34,7 @@ pip install -e .
 * run the following code in Python shell, replace `/path/to/save/data` with a specified dir to store the data.
 ```python
 import zipfile
+import os
 from huggingface_hub import hf_hub_download
 
 data_root = '/path/to/save/data'
@@ -57,7 +59,7 @@ os.remove(os.path.join(data_root, 'data.zip'))
 
 ## :rocket: A more advanced version
 We are building a new version with a larger data scale, more object categories, and higher-quality images and text. 
-You can preview it at [this website](), and the full version will come soon.
+You can preview it at [this website](https://wjpoom.github.io/preview/), and the full version will come soon.
 
 ## :memo: TODO
 - [ ] Release the newly built version of the dataset
