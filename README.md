@@ -5,6 +5,7 @@
  :orange_book:[`Notebook`](https://github.com/wjpoom/SPEC/tree/main/notebooks) 
  :black_nib:[`BibTex`](#black_nib-citation) 
  :rocket:[`Preview`](https://wjpoom.github.io/preview/)
+ :scroll:[`Poster`](https://github.com/wjpoom/SPEC/blob/main/assets/poster-v2.pdf)
 
 **Authors**: Wujian Peng, Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
 
