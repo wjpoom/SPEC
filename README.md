@@ -74,7 +74,7 @@ Part of this repository is built upon [ARO](https://github.com/mertyg/vision-lan
 ## Contact Us
 Feel free to contact us if you have any questions or suggestions 
 
-Email (Wujian Peng): wjpeng22@m.fudan.edu.cn
+Email (Wujian Peng): wjpeng24@m.fudan.edu.cn
 
 ## :black_nib: Citation
 If you use our code or data in this repo or find our work helpful, please consider giving a citation:
