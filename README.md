@@ -80,9 +80,9 @@ Email (Wujian Peng): wjpeng24@m.fudan.edu.cn
 If you use our code or data in this repo or find our work helpful, please consider giving a citation:
 
 ```
-@inproceedings{peng2024spec,
-  title={Synthesize, Diagnose, and Optimize: Towards Fine-Grained Vision-Language Understanding},
-  author={Wujian Peng, Sicheng Xie, Zuyao You, Shiyi Lan, Zuxuan Wu}, 
+@inproceedings{spec2024,
+  title={Synthesize Diagnose and Optimize: Towards Fine-Grained Vision-Language Understanding},
+  author={Peng, Wujian and Xie, Sicheng and You, Zuyao and Lan, Shiyi and Wu, Zuxuan},
   booktitle={CVPR},
   year={2024}
 }
