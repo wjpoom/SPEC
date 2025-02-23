@@ -1,13 +1,31 @@
-# Synthesize, Diagnose, and Optimize: Towards Fine-Grained Vision-Language Understanding
+<div align="center" style="font-family: charter;">
+<h1><i>SPEC</i>: Synthesize, Diagnose, and Optimize: Towards Fine-Grained Vision-Language Understanding</h1>
+<a href="https://arxiv.org/abs/2312.00081" target="_blank">
+    <img alt="arXiv" src="https://img.shields.io/badge/arXiv-SPEC-red?logo=arxiv" height="20" />
+</a>
+<a href="https://huggingface.co/datasets/wjpoom/SPEC" target="_blank">
+    <img alt="HF Dataset: SPEC" src="https://img.shields.io/badge/📒_Benchmark-SPEC-ffc107?color=A9B5DF&logoColor=white" height="20" />
+</a>
+<a href="https://github.com/wjpoom/SPEC/tree/main/notebooks" target="_blank">
+    <img alt="HF Dataset: Inst-It-Dataset" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Notebook-SPEC-ffc107?color=B3D8A8&logoColor=white" height="20" />
+</a>
+<a href="https://github.com/wjpoom/SPEC/blob/main/assets/poster-v2.pdf" target="_blank">
+    <img alt="Poster" src="https://img.shields.io/badge/📑_Poster-Inst--It-ffc107?color=FFCF50&logoColor=white" height="20" />
+</a>
 
- :bookmark_tabs:[`Paper`](https://arxiv.org/abs/2312.00081) 
- :file_folder:[`Data`](https://huggingface.co/datasets/wjpoom/SPEC) 
- :orange_book:[`Notebook`](https://github.com/wjpoom/SPEC/tree/main/notebooks) 
- :black_nib:[`BibTex`](#black_nib-citation) 
- :rocket:[`Preview`](https://wjpoom.github.io/preview/)
- :scroll:[`Poster`](https://github.com/wjpoom/SPEC/blob/main/assets/poster-v2.pdf)
+<div>
+    <a href="https://scholar.google.com/citations?user=GTuWk9YAAAAJ&hl=zh-CN" target="_blank">Wujian Peng</a><sup></sup>,</span>
+    Sicheng Xie<sup></sup>,</span>
+    Zuyao You<sup></sup>,</span>
+    <a href="https://voidrank.github.io/" target="_blank">Shiyi Lan</a><sup></sup>,</span>
+    <a href="https://zxwu.azurewebsites.net/" target="_blank">Zuxuan Wu</a><sup>&dagger;</sup>,</span>
+</div>
 
-**Authors**: Wujian Peng, Sicheng Xie, Zuyao You, [Shiyi Lan](https://voidrank.github.io/), [Zuxuan Wu](https://zxwu.azurewebsites.net/)
+<div>
+    <sup>&dagger;</sup> Corresponding author&emsp;
+</div>
+
+</div>
 
 ## :fire: News
 * `Apr. 14, 2024` We have released a [preview](https://wjpoom.github.io/preview/) of a more advanced dataset version, the full version will come soon.
@@ -79,11 +97,12 @@ Email (Wujian Peng): wjpeng24@m.fudan.edu.cn
 ## :black_nib: Citation
 If you use our code or data in this repo or find our work helpful, please consider giving a citation:
 
-```
-@inproceedings{spec2024,
-  title={Synthesize Diagnose and Optimize: Towards Fine-Grained Vision-Language Understanding},
+``` bibtex
+@inproceedings{peng2024synthesize,
+  title={Synthesize diagnose and optimize: Towards fine-grained vision-language understanding},
   author={Peng, Wujian and Xie, Sicheng and You, Zuyao and Lan, Shiyi and Wu, Zuxuan},
-  booktitle={CVPR},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={13279--13288},
   year={2024}
 }
 ```
