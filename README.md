@@ -84,16 +84,13 @@ os.remove(os.path.join(data_root, 'data.zip'))
 ### evaluate custom VLMs
 * If you want to evaluate your custom model on SPEC, you can follow the instructions in [this document](https://github.com/wjpoom/SPEC/blob/main/docs/evaluate_custom_model.md).
 
-### Model Usage
-* download checkpoint
+## :space_invader: Model weights
 ```shell
+pip install open_clip_torch
 mkdir checkpoints
 huggingface-cli download wjpoom/SPEC-CLIP-ViT-B-32 --local-dir checkpoints/SPEC-CLIP-ViT-B-32
 ```
-
-* load model
 ```python
-# pip install open_clip_torch
 import torch
 from PIL import Image
 import open_clip
