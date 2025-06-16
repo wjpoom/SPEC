@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: spec
+Version: 1.0.0
+Requires-Dist: einops>=0.7.0
+Requires-Dist: open_clip_torch==2.24.0
+Requires-Dist: PyYAML==6.0.1
+Requires-Dist: setuptools==69.2.0
+Requires-Dist: timm==0.9.16
+Requires-Dist: torch==2.2.1
+Requires-Dist: torchvision==0.17.1
+Requires-Dist: tqdm==4.66.2
+Requires-Dist: transformers==4.38.2
+Requires-Dist: huggingface-hub==0.21.4
+Requires-Dist: jedi>=0.16
+Requires-Dist: fairscale==0.4.13
+Dynamic: requires-dist

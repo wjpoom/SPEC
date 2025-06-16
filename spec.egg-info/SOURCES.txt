@@ -1,0 +1,15 @@
+README.md
+setup.py
+spec/__init__.py
+spec/dataset.py
+spec/eval.py
+spec.egg-info/PKG-INFO
+spec.egg-info/SOURCES.txt
+spec.egg-info/dependency_links.txt
+spec.egg-info/requires.txt
+spec.egg-info/top_level.txt
+spec/models/__init__.py
+spec/models/base_wrapper.py
+spec/models/blip_wrapper.py
+spec/models/clip_wrapper.py
+spec/models/flava_wrapper.py

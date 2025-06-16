@@ -3,14 +3,17 @@
 <a href="https://arxiv.org/abs/2312.00081" target="_blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-SPEC-red?logo=arxiv" height="20" />
 </a>
+<a href="https://huggingface.co/wjpoom/SPEC-CLIP-ViT-B-32" target="_blank">
+    <img alt="HF Checkpoint: SPEC" src="https://img.shields.io/badge/📒_Checkpoint-SPEC-ffc107?color=5e84b6&logoColor=white" height="20" />
+</a>
 <a href="https://huggingface.co/datasets/wjpoom/SPEC" target="_blank">
     <img alt="HF Dataset: SPEC" src="https://img.shields.io/badge/📒_Benchmark-SPEC-ffc107?color=A9B5DF&logoColor=white" height="20" />
 </a>
 <a href="https://github.com/wjpoom/SPEC/tree/main/notebooks" target="_blank">
     <img alt="HF Dataset: Inst-It-Dataset" src="https://img.shields.io/badge/%F0%9F%A4%97%20_Notebook-SPEC-ffc107?color=B3D8A8&logoColor=white" height="20" />
 </a>
-<a href="https://github.com/wjpoom/SPEC/blob/main/assets/poster-v2.pdf" target="_blank">
-    <img alt="Poster" src="https://img.shields.io/badge/📑_Poster-Inst--It-ffc107?color=FFCF50&logoColor=white" height="20" />
+<a href="https://openaccess.thecvf.com/content/CVPR2024/supplemental/Peng_Synthesize_Diagnose_and_CVPR_2024_supplemental.pdf" target="_blank">
+    <img alt="Supplementary" src="https://img.shields.io/badge/📑_Supplementary-SPEC-ffc107?color=FFCF50&logoColor=white" height="20" />
 </a>
 
 <div>
@@ -28,13 +31,14 @@
 </div>
 
 ## :fire: News
-* `Apr. 14, 2024` We have released a [preview](https://wjpoom.github.io/preview/) of a more advanced dataset version, the full version will come soon.
+* `Jun. 17, 2025` 🔥  We have released the [checkpoints](https://huggingface.co/wjpoom/SPEC-CLIP-ViT-B-32) of our fine-tuned model.
+<!-- * `Apr. 14, 2024` We have released a [preview](https://wjpoom.github.io/preview/) of a more advanced dataset version, the full version will come soon. -->
 * `Apr. 13, 2024` We released the SPEC dataset and the code for evaluation, sorry for the delay :relaxed:.
 * `Feb. 28, 2024` Our work has been accepted by [CVPR 2024](https://cvpr.thecvf.com/) :tada:.
 
-## :rocket: A more advanced version is coming!
+<!-- ## :rocket: A more advanced version is coming!
 We are building a new version with a larger data scale, more object categories, and higher-quality images and text, and more. 
-You can preview it at [this website](https://wjpoom.github.io/preview/), and the full version will come soon.
+You can preview it at [this website](https://wjpoom.github.io/preview/), and the full version will come soon. -->
 
 ## :mag: SPEC Benchmark
 To evaluate the understanding capability of visual-language models on fine-grained concepts, we propose a new benchmark, SPEC, 
@@ -80,9 +84,47 @@ os.remove(os.path.join(data_root, 'data.zip'))
 ### evaluate custom VLMs
 * If you want to evaluate your custom model on SPEC, you can follow the instructions in [this document](https://github.com/wjpoom/SPEC/blob/main/docs/evaluate_custom_model.md).
 
+### Model Usage
+* download checkpoint
+```shell
+mkdir checkpoints
+huggingface-cli download wjpoom/SPEC-CLIP-ViT-B-32 --local-dir checkpoints/SPEC-CLIP-ViT-B-32
+```
+
+* load model
+```python
+# pip install open_clip_torch
+import torch
+from PIL import Image
+import open_clip
+
+model, _, preprocess = open_clip.create_model_and_transforms('ViT-B-32', pretrained='checkpoints/SPEC-CLIP-ViT-B-32', load_weights_only=False)
+model.eval()
+tokenizer = open_clip.get_tokenizer('ViT-B-32')
+
+image = preprocess(Image.open("assets/image.png")).unsqueeze(0)
+text = tokenizer([
+    "the broccoli is situated above the backpack.", 
+    "the broccoli is situated to the right of the backpack",
+    "the broccoli is positioned on the left of the backpack.",
+    "the broccoli is placed beneath the backpack."
+    ])
+
+with torch.no_grad(), torch.autocast("cuda"):
+    image_features = model.encode_image(image)
+    text_features = model.encode_text(text)
+    image_features /= image_features.norm(dim=-1, keepdim=True)
+    text_features /= text_features.norm(dim=-1, keepdim=True)
+
+    text_probs = (100.0 * image_features @ text_features.T).softmax(dim=-1)
+
+print("Label probs:", text_probs)  
+```
+
 ## :memo: TODO
-- [ ] Release the newly built version of the dataset
-- [ ] Release the code of our data synthesize pipeline
+<!-- - [ ] Release the newly built version of the dataset -->
+<!-- - [ ] Release the code of our data synthesize pipeline -->
+- [x] Release the checkpoint of fine-tuned model
 - [x] Release the testing set of SPEC benchmark
 - [x] Release the evaluation code of SPEC
 
